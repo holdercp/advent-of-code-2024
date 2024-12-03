@@ -21,6 +21,8 @@ int main() {
     fscanf(input, "%d   %d\n", &l[i], &r[i]);
   }
 
+  fclose(input);
+
   // Sort the arrays
   qsort(l, LOCATION_PAIRS, sizeof(int), sortasc);
   qsort(r, LOCATION_PAIRS, sizeof(int), sortasc);
